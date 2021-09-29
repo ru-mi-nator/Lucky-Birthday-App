@@ -13,9 +13,9 @@
         <label for="date-of-birth">Enter Your Date of Birth : </label>
         <input type="date" id="date-of-birth">
         <label for="lucky-number">Enter Your Lucky Number : </label>
-        <input type="number" id="lucky-number">
+        <input type="number" id="lucky-number" required min="1" oninput="validity.valid||(value='')">
         <button id="check-button">CHECK</button>
-        <p id="otput-box"></p>
+        <p id="output-box"></p>
     </div>
     
     <script src="app.js"></script>
